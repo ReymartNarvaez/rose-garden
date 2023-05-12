@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "phosphor-react";
-import "../css/navbar.css";
 import { IonIcon } from "@ionic/react";
-import { menu, close } from "ionicons/icons";
+import { menu, close, search } from "ionicons/icons";
 
 import { useState } from "react";
 const path = ["", "blog", "about", "contact", "products"];
@@ -37,7 +36,14 @@ export const Navbar = () => {
         <ul className="flex items-center">
           <li className="mx-2">
             <Link className="hover:text-[#E1D9D1] text-[#FFFFFF]" to="/search">
-              Search
+              <span className="border-b border-[#FFFFFF]">
+                <input
+                  type="text"
+                  className="md:static w-40 focus:outline-none focus:border-[#FFFFFF] text-[#FFFFFF] bg-transparent"
+                  placeholder="Search"
+                />
+                <IonIcon icon={search} />
+              </span>
             </Link>
           </li>
           <li className="mx-2">
@@ -46,8 +52,8 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="mx-5 my-5">
-            <button className="bg-[#FFFFFF] px-5 py-2 rounded-sm hover:bg-[#87acec]">
-              Mitt konto
+            <button className="hidden lg:block text-[#FFFFFF] bg-[#3A5254] px-5 py-2 rounded-sm hover:text-[#87acec] outline-none">
+              My Account
             </button>
           </li>
         </ul>
