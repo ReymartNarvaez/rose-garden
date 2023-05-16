@@ -1,6 +1,6 @@
 export const IntroText = () => {
   return (
-    <div>
+    <div className="text-center">
       <fieldset className="border-t border-slate-300">
         <legend className="mx-auto px-4 text-[#3A5254] text-2xl italic">
           Blossoms & Blooms Where Flowers Come to Life
