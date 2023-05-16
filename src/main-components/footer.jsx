@@ -26,7 +26,7 @@ export const Footer = () => {
         />
       </div>
 
-      <div className="grid justify-items-center place-items-center h-">
+      <div className="grid justify-items-center place-items-center">
         <h1 className="m-5 text-[#FFFFFF]">Subscribe to get latest updates</h1>
         <div className="flex border border-[#FFFFFF] rounded">
           <input

@@ -5,6 +5,10 @@ import { SubNavbar } from "./main-components/subNavbar";
 import { Footer } from "./main-components/footer";
 import { Cart } from "./pages/cart";
 import { Home } from "./pages/home";
+import { Blog } from "./pages/blog";
+import { About } from "./pages/about";
+import { Contact } from "./pages/contact";
+import { Account } from "./pages/account";
 import { Products } from "./pages/products";
 
 const App = () => {
@@ -15,10 +19,10 @@ const App = () => {
         <SubNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" />
-          <Route path="/about" />
-          <Route path="/contact" />
-          <Route path="/account" />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/account" element={<Account />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/products" element={<Products />} />
           <Route path="/spring-flowers" />
