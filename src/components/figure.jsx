@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-export const Figure = ({ path, text, screen }) => {
+export const Figure = ({ path, text }) => {
   return (
     <div className="relative w-full h-full col-span-full">
       <img src={path} className="rounded-lg w-full h-full" />
@@ -9,18 +9,3 @@ export const Figure = ({ path, text, screen }) => {
     </div>
   );
 };
-
-{
-  /* <div className="rounded-lg">
-      <figure className="m-1 bg-[#06373C] bg-opacity-10 rounded-lg">
-        <img
-          src={path}
-          alt="Image description"
-          className="rounded-tl-lg rounded-tr-lg"
-        />
-        <figcaption className="text-[#06373C] bg-[#06373C] bg-opacity-10 text-center text-xl font-extrabold rounded-bl-lg rounded-br-lg">
-          {text}
-        </figcaption>
-      </figure>
-    </div> */
-}

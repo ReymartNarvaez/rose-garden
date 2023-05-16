@@ -1,6 +1,6 @@
 import { StartImage } from "../main-components/startImage";
 import { Figure } from "../components/figure";
-import { IntroText } from "../assets/image/introText";
+import { IntroText } from "../components/introText";
 
 export const Home = () => {
   return (
@@ -35,7 +35,6 @@ export const Home = () => {
           <Figure path={"src/assets/image/treeFlower.png"} />
         </div>
       </div>
-      {/* <Options /> */}
     </div>
   );
 };
