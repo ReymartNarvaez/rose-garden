@@ -2,9 +2,11 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./main-components/navbar";
 import { SubNavbar } from "./main-components/subNavbar";
+import { Footer } from "./main-components/footer";
 import { Cart } from "./pages/cart";
 import { Home } from "./pages/home";
 import { Products } from "./pages/products";
+
 const App = () => {
   return (
     <div className="App">
@@ -25,7 +27,7 @@ const App = () => {
           <Route path="/pots" />
           <Route path="/grow" />
         </Routes>
-        <Navbar />
+        <Footer />
       </Router>
     </div>
   );

@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { ShoppingCart } from "phosphor-react";
 import { IonIcon } from "@ionic/react";
 import { menu, close, search } from "ionicons/icons";
-
 import { useState } from "react";
-const path = ["", "blog", "about", "contact", "products"];
-const pathLabel = ["Start", "Blog", "About", "Contact", "Products"];
 
 export const Navbar = () => {
+  const path = ["", "blog", "about", "contact", "products"];
+  const pathLabel = ["Start", "Blog", "About", "Contact", "Products"];
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navbarMenu = document.querySelector(".navbar-menu");
 
