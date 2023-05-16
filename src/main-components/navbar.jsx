@@ -52,9 +52,12 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="mx-5 my-5">
-            <button className="hidden lg:block text-[#FFFFFF] bg-[#3A5254] px-5 py-2 rounded-sm hover:text-[#87acec] outline-none">
+            <Link
+              className="hover:text-[#E1D9D1] text-[#FFFFFF]"
+              to={"/account"}
+            >
               My Account
-            </button>
+            </Link>
           </li>
         </ul>
       </div>
