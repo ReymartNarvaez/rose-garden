@@ -10,29 +10,32 @@ import { About } from "./pages/about";
 import { Contact } from "./pages/contact";
 import { Account } from "./pages/account";
 import { Products } from "./pages/products";
+import { ProductContextProvider } from "./context/productContextProvider";
 
 const App = () => {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <SubNavbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/spring-flowers" />
-          <Route path="/indoor-plants" />
-          <Route path="/outdoor-plants" />
-          <Route path="/pots" />
-          <Route path="/grow" />
-        </Routes>
-        <Footer />
-      </Router>
+      <ProductContextProvider>
+        <Router>
+          <Navbar />
+          <SubNavbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/spring-flowers" />
+            <Route path="/indoor-plants" />
+            <Route path="/outdoor-plants" />
+            <Route path="/pots" />
+            <Route path="/grow" />
+          </Routes>
+          <Footer />
+        </Router>
+      </ProductContextProvider>
     </div>
   );
 };
