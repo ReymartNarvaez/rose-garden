@@ -1,7 +1,14 @@
+import { Items } from "../components/items";
+import { Product } from "../components/product";
+
 export const Products = () => {
   return (
-    <div className="grid justify-items-center m-8 text-[50px] bg-[#f0f0f0] place-items-center h-screen">
-      <h1>Products Page Under Construction</h1>
+    <div className="">
+      <div className="w-full h-auto grid grid-cols-3 place-items-center">
+        {Items.map((items) => (
+          <Product key={items.id} data={items} />
+        ))}
+      </div>
     </div>
   );
 };
