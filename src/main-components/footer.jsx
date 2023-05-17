@@ -32,10 +32,10 @@ export const Footer = () => {
           <input
             type="text"
             className="block w-full px-4 py-2 text-[#FFFFFF] bg-[#3A5254] border rounded-l-md  focus:outline-none focus:ring-opacity-40"
-            placeholder="Search..."
+            placeholder="Your email"
           />
           <button className="px-4 text-[#3A5254] bg-[#FFFFFF] border-l rounded-r ">
-            Search
+            Subscribe
           </button>
         </div>
       </div>
