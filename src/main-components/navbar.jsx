@@ -3,6 +3,7 @@ import { ShoppingCart } from "phosphor-react";
 import { IonIcon } from "@ionic/react";
 import { menu, close, search } from "ionicons/icons";
 import { useState } from "react";
+import { Modal } from "./loginModal";
 
 export const Navbar = () => {
   const path = ["", "blog", "about", "contact", "products"];
@@ -14,6 +15,16 @@ export const Navbar = () => {
   const handleClick = () => {
     setIsMenuOpen(!isMenuOpen);
     navbarMenu.classList.toggle("top-[9%]");
+  };
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
   };
 
   return (
@@ -52,12 +63,13 @@ export const Navbar = () => {
             </Link>
           </li>
           <li className="mx-5 my-5">
-            <Link
-              className="hover:text-[#E1D9D1] text-[#FFFFFF]"
-              to={"/account"}
+            <button
+              onClick={openModal}
+              className="hidden lg:block text-[#FFFFFF] bg-[#3A5254] px-5 py-2 rounded-sm hover:text-[#87acec] outline-none"
             >
               My Account
-            </Link>
+            </button>
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
           </li>
         </ul>
       </div>
