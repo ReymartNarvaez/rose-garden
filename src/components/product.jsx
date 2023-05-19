@@ -1,15 +1,15 @@
 import { useContext } from "react";
 import { ProductContext } from "../context/productContextProvider";
 
-export const Product = (props) => {
-  const { id, productName, price, productImage } = props.data;
+export const Product = ({ data }) => {
+  const { id, productName, price, productImage } = data;
   const { addToCart, cartItems } = useContext(ProductContext);
 
   const cartItemAmount = cartItems[id];
   return (
-    <div className="rounded-2xl w-300 h-350 m-100 flex flex-col justify-center items-center bg-[]">
+    <div className="w-[50%] shadow-lg rounded-lg rounded-2xl w-300 h-350 m-100 flex flex-col justify-center items-center bg-[] m-8">
       <img
-        className="w-[50%] rounded-lg"
+        className="w-[50%] rounded-lg mt-8"
         src={productImage}
         alt="Product Image"
       />
