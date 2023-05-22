@@ -11,7 +11,7 @@ export const Footer = () => {
   const connectLabel = ["Facebook", "Instagram", "Twitter", "Linkdin"];
 
   return (
-    <div className="grid grid-cols-2 bg-[#3A5254] items-center w-[100%] mx-auto">
+    <div className="grid grid-cols-2 bg-[#3A5254] items-center w-[100%] mx-auto mt-8">
       <div className="grid grid-cols-3 grid justify-items-end">
         <FooterText
           title={"Our Team"}
