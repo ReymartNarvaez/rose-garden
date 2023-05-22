@@ -1,6 +1,6 @@
 import { close } from "ionicons/icons";
 import { IonIcon } from "@ionic/react";
-import { Input } from "../components/input";
+import { Input } from "../components/account/input";
 import { Link } from "react-router-dom";
 
 export const Modal = ({ isOpen, onClose }) => {

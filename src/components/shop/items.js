@@ -1,4 +1,4 @@
-import WhiteBackgroundPot from "../assets/image/WhiteBackgroundPot.png";
+import WhiteBackgroundPot from "../../assets/image/WhiteBackgroundPot.png";
 
 export const Items = [
   {

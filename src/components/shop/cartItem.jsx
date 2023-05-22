@@ -1,5 +1,10 @@
+import { useContext } from "react";
+import { ProductContext } from "../../context/productContextProvider";
+
 export const CartItem = ({ data }) => {
   const { id, productName, price, productImage } = data;
+  const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
+    useContext(ProductContext);
 
   return (
     <div className="flex items-center shadow-lg rounded-lg p-4 rounded-2xl m-30 mt-8">
@@ -11,6 +16,25 @@ export const CartItem = ({ data }) => {
       <div className="w-[100%] text-[30px] m-10">
         <p className="font-bold">{productName}</p>
         <p className="text-gray-600">{price} kr</p>
+        <div className="">
+          <button
+            onClick={() => removeFromCart(id)}
+            className="border-2 border-gray-300 rounded-md w-[6%]"
+          >
+            -
+          </button>
+          <input
+            value={cartItems[id]}
+            onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
+            className="border-2 border-gray-300 rounded-md text-center w-[10%] ml-8 mr-8"
+          />
+          <button
+            onClick={() => addToCart(id)}
+            className="border-2 border-gray-300 rounded-md w-[6%]"
+          >
+            +
+          </button>
+        </div>
       </div>
     </div>
   );
