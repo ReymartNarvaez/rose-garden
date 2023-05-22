@@ -7,7 +7,7 @@ export const Cart = () => {
   const { cartItems } = useContext(ProductContext);
 
   return (
-    <div className="grid place-items-center h-screen">
+    <div className="grid place-items-center h-auto">
       <div className="w-2/3">
         {Items.map((items) => {
           if (cartItems[items.id] !== 0) {
