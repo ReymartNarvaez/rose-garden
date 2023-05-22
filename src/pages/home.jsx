@@ -1,6 +1,6 @@
 import { StartImage } from "../main-components/startImage";
-import { Figure } from "../components/figure";
-import { IntroText } from "../components/introText";
+import { Figure } from "../components/homePage/figure";
+import { IntroText } from "../components/homePage/introText";
 
 export const Home = () => {
   return (

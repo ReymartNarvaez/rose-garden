@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductContext } from "../context/productContextProvider";
+import { ProductContext } from "../../context/productContextProvider";
 
 export const Product = ({ data }) => {
   const { id, productName, price, productImage } = data;
