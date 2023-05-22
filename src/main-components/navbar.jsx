@@ -46,16 +46,14 @@ export const Navbar = () => {
       <div className="flex items-center">
         <ul className="flex items-center">
           <li className="mx-2">
-            <Link className="hover:text-[#E1D9D1] text-[#FFFFFF]" to="/search">
-              <span className="border-b border-[#FFFFFF]">
-                <input
-                  type="text"
-                  className="md:static w-40 focus:outline-none focus:border-[#FFFFFF] text-[#FFFFFF] bg-transparent"
-                  placeholder="Search"
-                />
-                <IonIcon icon={search} />
-              </span>
-            </Link>
+            <span className="border-b border-[#FFFFFF] hover:text-[#E1D9D1] text-[#FFFFFF]">
+              <input
+                type="text"
+                className="md:static w-40 focus:outline-none focus:border-[#FFFFFF] text-[#FFFFFF] bg-transparent"
+                placeholder="Search"
+              />
+              <IonIcon icon={search} />
+            </span>
           </li>
           <li className="mx-2">
             <Link className="hover:text-[#E1D9D1] text-[#FFFFFF]" to="/cart">
