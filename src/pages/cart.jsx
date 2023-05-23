@@ -2,9 +2,12 @@ import { useContext } from "react";
 import { Items } from "../components/shop/items";
 import { ProductContext } from "../context/productContextProvider";
 import { CartItem } from "../components/shop/cartItem";
+import { useNavigate } from "react-router-dom";
 
 export const Cart = () => {
-  const { cartItems } = useContext(ProductContext);
+  const { cartItems, getTotalCartAmount } = useContext(ProductContext);
+  const totalAmount = getTotalCartAmount();
+  const navigate = useNavigate();
 
   return (
     <div className="grid place-items-center h-auto">
@@ -15,6 +18,26 @@ export const Cart = () => {
           }
         })}
       </div>
+      {totalAmount > 0 ? (
+        <div className="grid place-items-center">
+          <p className="mt-8 font-extrabold">Subtotal: {totalAmount} kr</p>
+          <div className="grid grid-cols-2 mt-8">
+            <button
+              onClick={() => navigate("/")}
+              className="border border-[#3A5254] hover:text-[#E1D9D1] text-[#3A5254] rounded px-4 mx-3"
+            >
+              {" "}
+              Continue Shopping
+            </button>
+            <button className="hover:text-[#E1D9D9] hover:bg-[#9EB5B7] bg-[#3A5254] text-white px-4 py-2 w-full rounded mx-3">
+              {" "}
+              Checkout{" "}
+            </button>
+          </div>
+        </div>
+      ) : (
+        <h1> Your Cart is Empty</h1>
+      )}
     </div>
   );
 };
