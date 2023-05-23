@@ -16,25 +16,25 @@ export const CartItem = ({ data }) => {
       <div className="w-[100%] text-[30px] m-10">
         <p className="font-bold">{productName}</p>
         <p className="text-gray-600">{price} kr</p>
-        <div className="">
-          <button
-            onClick={() => removeFromCart(id)}
-            className="border-2 border-gray-300 rounded-md w-[6%]"
-          >
-            -
-          </button>
-          <input
-            value={cartItems[id]}
-            onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
-            className="border-2 border-gray-300 rounded-md text-center w-[10%] ml-8 mr-8"
-          />
-          <button
-            onClick={() => addToCart(id)}
-            className="border-2 border-gray-300 rounded-md w-[6%]"
-          >
-            +
-          </button>
-        </div>
+      </div>
+      <div className="mr-8">
+        <button
+          onClick={() => removeFromCart(id)}
+          className="border-2 border-gray-300 rounded-md w-[20%] p-1"
+        >
+          -
+        </button>
+        <input
+          value={cartItems[id]}
+          onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
+          className="border-2 border-gray-300 rounded-md text-center w-[30%] m-2 p-1"
+        />
+        <button
+          onClick={() => addToCart(id)}
+          className="border-2 border-gray-300 rounded-md w-[20%] p-1"
+        >
+          +
+        </button>
       </div>
     </div>
   );
