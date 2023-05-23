@@ -1,4 +1,7 @@
-import WhiteBackgroundPot from "../../assets/image/WhiteBackgroundPot.png";
+import WhiteBackgroundPot from "../../assets/productImage/WhiteBackgroundPot.png";
+import pot2 from "../../assets/productImage/pot2.png";
+import pot3 from "../../assets/productImage/pot3.png";
+import pot4 from "../../assets/productImage/pot4.png";
 
 export const Items = [
   {
@@ -9,31 +12,31 @@ export const Items = [
   },
   {
     id: 2,
-    productName: "Pot DarkStyle",
+    productName: "Pot",
     price: "666.0",
-    productImage: WhiteBackgroundPot,
+    productImage: pot2,
   },
   {
     id: 3,
     productName: "Pot Legend",
     price: "888.0",
-    productImage: WhiteBackgroundPot,
+    productImage: pot3,
   },
   {
     id: 4,
     productName: "Pot Original",
     price: "999.0",
-    productImage: WhiteBackgroundPot,
+    productImage: pot4,
   },
   {
     id: 5,
     productName: "Pot DarkStyle",
     price: "666.0",
-    productImage: WhiteBackgroundPot,
+    productImage: pot3,
   },
   {
     id: 6,
-    productName: "Pot Legend",
+    productName: "Pot",
     price: "888.0",
     productImage: WhiteBackgroundPot,
   },
