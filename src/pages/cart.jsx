@@ -36,7 +36,7 @@ export const Cart = () => {
           </div>
         </div>
       ) : (
-        <h1> Your Cart is Empty</h1>
+        <h1 className="mt-8 font-extrabold"> Your Cart is Empty</h1>
       )}
     </div>
   );
