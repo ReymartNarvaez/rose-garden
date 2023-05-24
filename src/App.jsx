@@ -1,4 +1,3 @@
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./main-components/navbar";
 import { SubNavbar } from "./main-components/subNavbar";
@@ -14,7 +13,7 @@ import { ProductContextProvider } from "./context/productContextProvider";
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
       <ProductContextProvider>
         <Router>
           <Navbar />

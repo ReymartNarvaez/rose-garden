@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   const handleClick = () => {
     setIsMenuOpen(!isMenuOpen);
-    navbarMenu.classList.toggle("top-[9%]");
+    navbarMenu.classList.toggle("top-[5%]");
   };
 
   const [isModalOpen, setModalOpen] = useState(false);
@@ -29,7 +29,7 @@ export const Navbar = () => {
 
   return (
     <div className="flex justify-between bg-[#3A5254] items-center w-[100%] mx-auto">
-      <div className="navbar-menu md:static absolute bg-[#3A5254] md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+      <div className="z-10 navbar-menu md:static absolute bg-[#3A5254] md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
         <ul className="flex md:flex-row flex-col md:items-center md:gap-[1vw] gap-3">
           {path.map((item, index) => (
             <li key={index} className="mx-5 my-5">
@@ -71,7 +71,7 @@ export const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="md:hidden">
+      <div className="md:hidden z-10">
         <IonIcon
           icon={isMenuOpen ? menu : close}
           onclick={handleClick}

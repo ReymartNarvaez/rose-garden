@@ -11,8 +11,8 @@ export const Footer = () => {
   const connectLabel = ["Facebook", "Instagram", "Twitter", "Linkdin"];
 
   return (
-    <div className="grid grid-cols-2 bg-[#3A5254] items-center w-[100%] mx-auto mt-8">
-      <div className="grid grid-cols-3 grid justify-items-end">
+    <div className="grid sm:grid-cols-2 md:grid-cols-2 bg-[#3A5254] items-center w-[100%] mx-auto mt-2">
+      <div className="grid md:grid-cols-3 grid justify-items-end mt-8">
         <FooterText
           title={"Our Team"}
           path={ourTeamPath}
@@ -25,8 +25,7 @@ export const Footer = () => {
           pathLabel={connectLabel}
         />
       </div>
-
-      <div className="grid justify-items-center place-items-center">
+      <div className="grid place-items-center mb-8">
         <h1 className="m-5 text-[#FFFFFF]">Subscribe to get latest updates</h1>
         <div className="flex border border-[#FFFFFF] rounded">
           <input

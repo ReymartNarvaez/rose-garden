@@ -7,7 +7,7 @@ export const Product = ({ data }) => {
 
   const cartItemAmount = cartItems[id];
   return (
-    <div className="w-[50%] shadow-lg rounded-lg rounded-2xl w-300 h-350 m-100 flex flex-col justify-center items-center bg-[] m-8">
+    <div className="lg:w-[80%] md:w-[50%] shadow-lg rounded-lg rounded-2xl w-300 h-350 m-100 flex flex-col justify-center items-center bg-[] md:m-8 mt-8">
       <img
         className="w-[50%] rounded-lg mt-8"
         src={productImage}

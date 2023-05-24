@@ -4,7 +4,7 @@ import { Product } from "../components/shop/product";
 export const Products = () => {
   return (
     <div className="">
-      <div className="w-full h-auto grid grid-cols-4 place-items-center">
+      <div className="flex flex-col justify-center w-full h-auto lg:grid grid-cols-4 place-items-center">
         {Items.map((items) => (
           <Product key={items.id} data={items} />
         ))}

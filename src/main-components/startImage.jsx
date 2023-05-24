@@ -1,6 +1,6 @@
 export const StartImage = () => {
   return (
-    <div className="flex hidden md:block">
+    <div className="flex hidden md:block mt-3">
       <div
         className="bg-[url('src/assets/image/Pental.png')] bg-center w-full bg-cover bg-no-repeat h-[250px]
      flex items-center justify-center font-extrabold text-[#FFFFFF] m-1 text-[20px] lg:text-[30px] xl:text-[40px]"

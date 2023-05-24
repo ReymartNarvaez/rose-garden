@@ -7,7 +7,7 @@ export const Modal = ({ isOpen, onClose }) => {
   return (
     <>
       {isOpen && (
-        <div className="fixed grid grid-rows-1  inset-0 flex items-center justify-center z-10">
+        <div className="fixed grid grid-rows-1 inset-0 flex items-center justify-center z-10">
           <div className="">
             <div className="grid grid-rows-2 gap-4 m-1 bg-white p-4 rounded shadow w-full mb-3">
               <div className="grid grid-cols-3 gap-4 border-b border-gray-300 place-items-center">
