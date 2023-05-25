@@ -1,4 +1,4 @@
-export const Category = ({ string }) => {
+export const CategoryText = ({ string }) => {
   return (
     <div className="flex flex-col mt-2 lg:w-auto xl:w-[160px] h-20 flex justify-center">
       <button

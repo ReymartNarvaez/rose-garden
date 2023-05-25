@@ -1,5 +1,4 @@
-// eslint-disable-next-line react/prop-types
-export const Figure = ({ path, text }) => {
+export const CategoryImage = ({ path, text }) => {
   return (
     <div className="relative md:w-full h-full col-span-full w-[95%]">
       <img src={path} className="rounded-lg w-full h-full" />

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductContext } from "../../context/productContextProvider";
+import { ProductContext } from "../../context/ProductContextProvider";
 
 export const Product = ({ data }) => {
   const { id, productName, price, productImage } = data;
@@ -19,7 +19,7 @@ export const Product = ({ data }) => {
       </div>
       <button
         onClick={() => addToCart(id)}
-        className="hover:text-[#E1D9D9] hover:bg-[#9EB5B7] bg-[#3A5254] text-white px-4 py-2 rounded mb-8"
+        className="hover:bg-[#91b9b3] bg-[#3A5254] text-white px-4 py-2 rounded mb-8"
       >
         Add To Cart {cartItemAmount > 0 && <> ({cartItemAmount}) </>}
       </button>

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductContext } from "../../context/productContextProvider";
+import { ProductContext } from "../../context/ProductContextProvider";
 
 export const CartItem = ({ data }) => {
   const { id, productName, price, productImage } = data;

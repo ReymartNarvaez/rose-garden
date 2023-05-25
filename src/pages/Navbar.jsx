@@ -3,7 +3,7 @@ import { ShoppingCart } from "phosphor-react";
 import { IonIcon } from "@ionic/react";
 import { menu, close, search } from "ionicons/icons";
 import { useState } from "react";
-import { Modal } from "./loginModal";
+import { Modal } from "./LoginModal";
 
 export const Navbar = () => {
   const path = ["", "blog", "about", "contact", "products"];
@@ -34,7 +34,7 @@ export const Navbar = () => {
           {path.map((item, index) => (
             <li key={index} className="mx-5 my-5">
               <Link
-                className="hover:text-[#E1D9D1] text-[#FFFFFF]"
+                className="hover:text-[#87acec] text-[#FFFFFF]"
                 to={"/" + item}
               >
                 {pathLabel[index]}
@@ -46,7 +46,7 @@ export const Navbar = () => {
       <div className="flex items-center">
         <ul className="flex items-center">
           <li className="mx-2">
-            <span className="border-b border-[#FFFFFF] hover:text-[#E1D9D1] text-[#FFFFFF]">
+            <span className="border-b border-[#FFFFFF] hover:border-[#87acec] hover:text-[#87acec] text-[#FFFFFF]">
               <input
                 type="text"
                 className="md:static w-40 focus:outline-none focus:border-[#FFFFFF] text-[#FFFFFF] bg-transparent"
@@ -56,7 +56,7 @@ export const Navbar = () => {
             </span>
           </li>
           <li className="mx-2">
-            <Link className="hover:text-[#E1D9D1] text-[#FFFFFF]" to="/cart">
+            <Link className="hover:text-[#87acec] text-[#FFFFFF]" to="/cart">
               <ShoppingCart size={32} />
             </Link>
           </li>

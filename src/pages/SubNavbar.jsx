@@ -1,4 +1,4 @@
-import { Category } from "../components/category";
+import { CategoryText } from "../components/sub-navbar/CategoryText";
 
 export const SubNavbar = () => {
   return (
@@ -8,11 +8,11 @@ export const SubNavbar = () => {
           Rose-Garden
         </legend>
         <div className="mt-4 mt-10 flex md:flex-row md:gap-[11vw]">
-          <Category string="Spring Flowers" />
-          <Category string="Indoor plants" />
-          <Category string="Outdoor plants" />
-          <Category string="Pots" />
-          <Category string="Grow" />
+          <CategoryText string="Spring Flowers" />
+          <CategoryText string="Indoor plants" />
+          <CategoryText string="Outdoor plants" />
+          <CategoryText string="Pots" />
+          <CategoryText string="Grow" />
         </div>
       </fieldset>
     </div>

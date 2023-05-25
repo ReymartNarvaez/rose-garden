@@ -1,4 +1,4 @@
-export const StartImage = () => {
+export const HomeImage = () => {
   return (
     <div className="flex hidden md:block mt-3">
       <div

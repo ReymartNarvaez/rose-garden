@@ -1,6 +1,6 @@
 import { close } from "ionicons/icons";
 import { IonIcon } from "@ionic/react";
-import { Input } from "../components/account/input";
+import { InputField } from "../components/login-modal/InputField";
 import { Link } from "react-router-dom";
 
 export const Modal = ({ isOpen, onClose }) => {
@@ -21,11 +21,11 @@ export const Modal = ({ isOpen, onClose }) => {
                 />
               </div>
               <div>
-                <Input placeholder={"Email"} type="text" />
-                <Input placeholder={"Password"} type="password" />
+                <InputField placeholder={"Email"} type="text" />
+                <InputField placeholder={"Password"} type="password" />
               </div>
               <div className="grid grid-rows-2 place-items-center">
-                <button className="hover:text-[#E1D9D9] hover:bg-[#9EB5B7] bg-[#3A5254] text-white px-4 py-2 w-full rounded">
+                <button className="hover:text-[#E1D9D9] hover:bg-[#91b9b3] bg-[#3A5254] text-white px-4 py-2 w-full rounded">
                   Login
                 </button>
                 <Link className="hover:text-[#E1D9D1] text-[#3A5254]">
@@ -36,7 +36,7 @@ export const Modal = ({ isOpen, onClose }) => {
             <div className="justify-self-center gap-1 m-1 bg-white p-4 rounded shadow w-full">
               <div className="grid grid-rows-2 place-items-center">
                 <h1 className="underline text-xl mb-8">Become a member!</h1>
-                <button className="hover:bg-[#9EB5B7] border border-[#3A5254] text-[#3A5254] px-4 py-2 w-full rounded">
+                <button className="hover:bg-[#91b9b3] border border-[#3A5254] text-[#3A5254] hover:text-[#FFFFFF] px-4 py-2 w-full rounded">
                   Create Account
                 </button>
               </div>

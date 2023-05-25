@@ -1,4 +1,4 @@
-import { FooterText } from "../components/footerText";
+import { TextBlock } from "../components/footer/TextBlock";
 
 export const Footer = () => {
   const ourTeamPath = ["about", "team", "what-we-do", "contact"];
@@ -13,13 +13,13 @@ export const Footer = () => {
   return (
     <div className="grid sm:grid-cols-2 md:grid-cols-2 bg-[#3A5254] items-center w-[100%] mx-auto mt-2">
       <div className="grid md:grid-cols-3 grid justify-items-end mt-8">
-        <FooterText
+        <TextBlock
           title={"Our Team"}
           path={ourTeamPath}
           pathLabel={ourTeamLabel}
         />
-        <FooterText title={"More"} path={morePath} pathLabel={moreLabel} />
-        <FooterText
+        <TextBlock title={"More"} path={morePath} pathLabel={moreLabel} />
+        <TextBlock
           title={"Connect"}
           path={connectPath}
           pathLabel={connectLabel}
@@ -33,7 +33,7 @@ export const Footer = () => {
             className="block w-full px-4 py-2 text-[#FFFFFF] bg-[#3A5254] border rounded-l-md  focus:outline-none focus:ring-opacity-40"
             placeholder="Your email"
           />
-          <button className="px-4 text-[#3A5254] bg-[#FFFFFF] border-l rounded-r ">
+          <button className="px-4 text-[#3A5254] hover:text-[#FFFFFF] bg-[#FFFFFF] hover:bg-[#91b9b3] border-l rounded-r ">
             Subscribe
           </button>
         </div>
