@@ -32,7 +32,7 @@ export const HomePage = () => {
           <IntroText />
         </div>
         <div className="hidden sm:block row-span-1 grid place-items-center mb-5">
-          <CategoryImage path={"src/assets/image/treeFlower.png"} />
+          <CategoryImage path={"src/assets/image/blossomsImage.png"} />
         </div>
       </div>
     </div>
