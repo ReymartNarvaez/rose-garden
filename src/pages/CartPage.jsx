@@ -1,20 +1,19 @@
 import { useContext } from "react";
-import { Items } from "../components/product-page/Items";
 import { ProductContext } from "../context/ProductContextProvider";
 import { CartItem } from "../components/cart-page/CartItem";
 import { useNavigate } from "react-router-dom";
 
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount } = useContext(ProductContext);
+  const { cartItems, getTotalCartAmount, items } = useContext(ProductContext);
   const totalAmount = getTotalCartAmount();
   const navigate = useNavigate();
 
   return (
     <div className="grid place-items-center h-auto overflow-hidden m-1">
       <div className="sm:m-1 md:w-2/3">
-        {Items.map((items) => {
+        {items.map((items) => {
           if (cartItems[items.id] !== 0) {
-            return <CartItem data={items} />;
+            return <CartItem key={items.id} data={items} />;
           }
         })}
       </div>

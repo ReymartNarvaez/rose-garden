@@ -1,4 +1,4 @@
-import WhiteBackgroundPot from "../../assets/productImage/WhiteBackgroundPot.png";
+import pot1 from "../../assets/productImage/pot1.png";
 import pot2 from "../../assets/productImage/pot2.png";
 import pot3 from "../../assets/productImage/pot3.png";
 import pot4 from "../../assets/productImage/pot4.png";
@@ -8,7 +8,7 @@ export const Items = [
     id: 1,
     productName: "Pot Original",
     price: "999.0",
-    productImage: WhiteBackgroundPot,
+    productImage: pot1,
   },
   {
     id: 2,
@@ -38,6 +38,6 @@ export const Items = [
     id: 6,
     productName: "Pot",
     price: "888.0",
-    productImage: WhiteBackgroundPot,
+    productImage: pot1,
   },
 ];
